@@ -1,6 +1,6 @@
 {
     "name": "spotify-charts-com",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Fetch Spotify charts data by frequency, date or country",
     "main": "src/main.js",
     "scripts": {
