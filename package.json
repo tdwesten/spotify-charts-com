@@ -6,7 +6,8 @@
     "scripts": {
         "lint": "eslint --ext .js ./",
         "test": "mocha --ext .spec.js --exit",
-        "test-coverage": "nyc npm test"
+        "test-coverage": "nyc npm test",
+        "publish-to-npm": "np"
     },
     "keywords": [
         "spotify",

@@ -4,23 +4,26 @@ const csv = require("@fast-csv/parse");
 module.exports = {
     /**
      * Get the apple music playlist and returns an array of objects with an album, artist and title property
+     * @param {string} Type Filter the charts by type, options: "regional"/"viral", default: "regional"
      * @param {string} frequency Filter the charts by frequency, options: "daily"/"weekly", default: "daily"
      * @param {string} county Filter the charts by country code, options are e.g.: "us"/"gb"/"nl", default: "global"
      * @param {string} date Filter the charts by date, the format is "YYYY-MM-DD" , default: "latest"
      * @return {Promise<object>} The charts array
      */
     getCharts: function (
+        type = "regional",
         frequency = "daily",
         country = "global",
         date = "latest"
     ) {
         return new Promise((resolve, reject) => {
-            const url = `https://spotifycharts.com/regional/${country}/${frequency}/${date}/download`;
+            const url = `https://spotifycharts.com/${type}/${country}/${frequency}/${date}/download`;
 
             let charts = {
                 count: 0,
                 list: [],
                 filters: {
+                    type,
                     country,
                     frequency,
                     date,

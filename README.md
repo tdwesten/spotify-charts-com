@@ -8,7 +8,7 @@
 
 ### What is spotify-charts-com?
 
-It is a small npm module which allows getting the Spotify charts information based on by frequency, date or country.
+It is a small npm module which allows getting the Spotify charts information based on by type, frequency, date or country.
 The information that is returned contains the place in the chart, title, artist, number of streams and the song url.
 
 ### Usage
@@ -17,7 +17,7 @@ The information that is returned contains the place in the chart, title, artist,
 const spotifyCharts = require("spotify-charts-com");
 
 spotifyCharts
-    .getCharts("daily", "global", "latest") // frequency, country, date
+    .getCharts("regional". "daily", "global", "latest") // type, frequency, country, date
     .then((results) => {
         console.log(results);
     })
@@ -45,6 +45,7 @@ let result = [
             },
         ],
         filters: {
+            type: "regional",
             country: "global",
             frequency: "daily",
             date: "latest",
