@@ -17,7 +17,7 @@ The information that is returned contains the place in the chart, title, artist,
 const spotifyCharts = require("spotify-charts");
 
 spotifyCharts
-    .getCharts()
+    .getCharts("daily", "global", "latest") // frequency, country, date
     .then((results) => {
         console.log(results);
     })
