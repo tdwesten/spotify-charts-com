@@ -1,35 +1,35 @@
 {
-    "name": "spotify-charts-com",
-    "version": "0.0.3",
-    "description": "Fetch Spotify charts data by frequency, date or country",
-    "main": "src/main.js",
-    "scripts": {
-        "lint": "eslint --ext .js ./",
-        "test": "mocha --ext .spec.js --exit",
-        "test-coverage": "nyc npm test",
-        "publish-to-npm": "np"
-    },
-    "keywords": [
-        "spotify",
-        "music",
-        "charts",
-        "get",
-        "fetch",
-        "title",
-        "artist",
-        "album"
-    ],
-    "author": "Thomas van der Westen (https://thomasvanderwesten.nl/)",
-    "license": "MIT",
-    "dependencies": {
-        "@fast-csv/parse": "^4.3.6",
-        "request": "^2.88.2"
-    },
-    "devDependencies": {
-        "coveralls": "^3.1.0",
-        "eslint": "^6.8.0",
-        "eslint-plugin-promise": "^4.2.1",
-        "mocha": "^7.1.2",
-        "nyc": "^15.0.1"
-    }
+	"name": "spotify-charts-com",
+	"version": "0.0.3",
+	"description": "Fetch Spotify charts data by frequency, date or country",
+	"main": "src/main.js",
+	"scripts": {
+		"lint": "eslint --fix --ext .js ./",
+		"test": "mocha --ext .spec.js --exit",
+		"test-coverage": "nyc npm test",
+		"publish-to-npm": "np"
+	},
+	"keywords": [
+		"spotify",
+		"music",
+		"charts",
+		"get",
+		"fetch",
+		"title",
+		"artist",
+		"album"
+	],
+	"author": "Thomas van der Westen (https://thomasvanderwesten.nl/)",
+	"license": "MIT",
+	"dependencies": {
+		"@fast-csv/parse": "^4.3.6",
+		"request": "^2.88.2"
+	},
+	"devDependencies": {
+		"coveralls": "^3.1.0",
+		"eslint": "^6.8.0",
+		"eslint-plugin-promise": "^4.2.1",
+		"mocha": "^7.1.2",
+		"nyc": "^15.0.1"
+	}
 }
