@@ -6,6 +6,10 @@
 [![Build Status](https://travis-ci.com/tdwesten/spotify-charts-com.svg?branch=master)](https://travis-ci.com/tdwesten/spotify-charts-com)
 [![Coverage Status](https://coveralls.io/repos/github/tdwesten/spotify-charts-com/badge.svg?branch=master)](https://coveralls.io/github/tdwesten/spotify-charts-com?branch=master)
 
+### Deprecated!
+
+Spotify added Cloudflare DDOS protection...
+
 ### What is spotify-charts-com?
 
 It is a small npm module which allows getting the Spotify charts information based on by type, frequency, date or country.
@@ -40,8 +44,7 @@ let result = [
 				title: "drivers license",
 				artist: "Olivia Rodrigo",
 				streams: 5916117,
-				url:
-					"https://open.spotify.com/album/66FPnVL9G4CMKy3wvaGTcr?highlight=spotify:track:7lPN2DXiMsVn7XUKtOW1CS",
+				url: "https://open.spotify.com/album/66FPnVL9G4CMKy3wvaGTcr?highlight=spotify:track:7lPN2DXiMsVn7XUKtOW1CS",
 			},
 		],
 		filters: {
